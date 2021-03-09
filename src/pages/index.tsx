@@ -1,12 +1,18 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-export default function Home() {
+type Props = {
+  title: string
+}
+
+const ble = 'var'
+
+export default function Home({ title = 'Testando props title' }: Props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{title}</title>
+        <link rel="icon" href="/favicon.ico" />;
       </Head>
 
       <main className={styles.main}>
