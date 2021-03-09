@@ -5,8 +5,6 @@ type Props = {
   title: string
 }
 
-const ble = 'var'
-
 export default function Home({ title = 'Testando props title' }: Props) {
   return (
     <div className={styles.container}>
